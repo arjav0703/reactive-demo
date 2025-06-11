@@ -1,44 +1,37 @@
-// psst! If you already know Tailwind CSS, you can use it without any setup!
+import Profile from "../components/Profile"
 
-/// go ahead and remove the content of this and start crafting your own
+
 export default function App() {
+  // 1) Define a array of members.
+  //    You can add or remove objects here to change who’s displayed.
+const members = [
+  {
+    name: 'John Wick',
+    imageUrl:
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic1.colliderimages.com%2Fwordpress%2Fwp-content%2Fuploads%2F2023%2F05%2Fjohn-wick-2x1.jpg&f=1&nofb=1&ipt=5164b7c47d87243655fd764f745a7eef0e3f31da01d94248ee2c6d02390cbe0a',
+    imageSize: 150,
+  },
+  {
+    name: 'Winston Scott',
+    imageUrl:
+      'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.looper.com%2Fimg%2Fgallery%2Fwinston-scott-12-facts-only-john-wick-fans-know-about-the-continentals-owner%2Fwinston-has-a-long-history-with-the-high-table-1682011840.jpg&f=1&nofb=1&ipt=0c8cd73f33aca3bfd39c937d1f66421b1780d3e7ac968fa7609d68e4d6863aad',
+    imageSize: 150,
+  },
+]
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-pink-100 to-yellow-100 flex items-center justify-center">
-      <div className="bg-white/80 backdrop-blur-md rounded-3xl shadow-2xl p-10 max-w-lg w-full flex flex-col items-center border border-pink-200">
-        <div className="mb-4 flex items-center gap-2">
-          <span className="text-3xl">🚀</span>
-          <h1 className="text-3xl font-extrabold text-pink-600 drop-shadow">
-            Welcome, Hackclubber!
-          </h1>
-        </div>
-        <p className="text-lg text-gray-700 text-center mb-6">
-          You have successfully started the server.
-          <br />
-          Go ahead and edit{" "}
-          <code className="bg-pink-100 px-2 py-1 rounded font-mono text-pink-700">
-            app/page.js
-          </code>{" "}
-          to get started and turn this into a masterpiece.
-        </p>
-        <div className="flex gap-3">
-          <a
-            href="https://tailwindcss.com/docs"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 rounded-lg bg-pink-500 text-white font-semibold hover:bg-pink-600 transition"
-          >
-            Tailwind Docs
-          </a>
-          <a
-            href="https://hackclub.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-4 py-2 rounded-lg bg-yellow-400 text-pink-900 font-semibold hover:bg-yellow-500 transition"
-          >
-            See the guide
-          </a>
-        </div>
+    <div className="min-h-screen bg-amber-600 flex flex-col items-center py-12 px-4">
+      <h1 className="text-4xl font-extrabold text-white mb-8">
+        Characters of the John Wick Series
+      </h1>
+
+      <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+        {/* =========== Map function iterates over the array, just like a for loop */}
+        
+        {members.map((user, index) => (
+          <Profile key={index} user={user} />
+        ))}
       </div>
     </div>
-  );
+  )
 }
