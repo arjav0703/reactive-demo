@@ -1,3 +1,4 @@
+import Guests from "@/components/Guests"
 import Profile from "../components/Profile"
 
 
@@ -41,9 +42,7 @@ const members = [
         </div>
       </div>
       <div>
-        <h1 className="text-4xl font-extrabold text-black mb-8">
-          Guests staying at the Hotel:
-        </h1>
+        <Guests/>
       </div>
     </div>
   )

@@ -1,3 +1,4 @@
+"use client"
 import React, { useState, useEffect } from "react";
 
 export default function Guests() {
@@ -33,9 +34,11 @@ export default function Guests() {
   }
 
   return (
-    <div>
-      <h2>Guest List</h2>
-      <ul>
+    <div className="p-10 border-1 border-white backdrop-blur-2xl backdrop-brightness-75 text-white rounded-4xl">
+        <h1 className="text-4xl font-extrabold mb-8 ">
+          Guests staying at the Continentals:
+        </h1>
+      <ul className="w-7xl ">
         {users.map((user) => (
           <li key={user.id}>
             <strong>{user.name}</strong> ({user.username}) – {user.email}
