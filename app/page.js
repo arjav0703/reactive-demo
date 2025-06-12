@@ -26,9 +26,9 @@ const members = [
   }
 ]
   return (
-    <div className="min-h-screen  flex flex-col items-center py-12 px-4 gap-5">
+    <div className="min-h-screen  flex flex-col items-center py-12 px-4 gap-20">
       <div>
-        <h1 className="text-4xl font-extrabold text-black mb-8">
+        <h1 className="text-4xl font-extrabold text-white mb-8">
           Characters of the John Wick Series
         </h1>
 

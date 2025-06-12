@@ -38,7 +38,7 @@ export default function Guests() {
         <h1 className="text-4xl font-extrabold mb-8 ">
           Guests staying at the Continentals:
         </h1>
-      <ul className="w-7xl ">
+      <ul className="w-6xl ">
         {users.map((user) => (
           <li key={user.id}>
             <strong>{user.name}</strong> ({user.username}) – {user.email}

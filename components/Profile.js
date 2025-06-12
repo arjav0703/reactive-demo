@@ -4,7 +4,7 @@ export default function Profile({ user }) {
     : user.imageSize;
 
   return (
-    <div className="w-sm mx-auto bg-transparent border-1 border-white backdrop-blur-xl backdrop-brightness-70 rounded-xl shadow-md overflow-hidden">
+    <div className="w-sm mx-auto bg-transparent border-1 border-white backdrop-blur-xl backdrop-brightness-70 rounded-xl shadow-md overflow-hidden hover:scale-105 active:scale-95">
       <div className="flex flex-col items-center p-6">
         <div
           className="rounded-full overflow-hidden border-4 border-red-400 shadow-lg"
