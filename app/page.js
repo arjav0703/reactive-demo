@@ -17,11 +17,13 @@ const members = [
     imageUrl:
       'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.looper.com%2Fimg%2Fgallery%2Fwinston-scott-12-facts-only-john-wick-fans-know-about-the-continentals-owner%2Fwinston-has-a-long-history-with-the-high-table-1682011840.jpg&f=1&nofb=1&ipt=0c8cd73f33aca3bfd39c937d1f66421b1780d3e7ac968fa7609d68e4d6863aad',
     imageSize: 150,
+    url: 'https://johnwick.fandom.com/wiki/Winston_Scott'
   },
   {
     name: 'Caine',
     imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.looper.com%2Fimg%2Fgallery%2Fjohn-wick-chapter-4-caine-is-a-refreshing-take-an-old-action-trope%2Fl-intro-1679619131.jpg&f=1&nofb=1&ipt=1e86eef17bbdba2821eab8b6ef703745a28c1d57c0eae6ff77ec6eacc852bbab',
-    imageSize: 150
+    imageSize: 150,
+    url: 'https://johnwick.fandom.com/wiki/Caine'
 
   }
 ]

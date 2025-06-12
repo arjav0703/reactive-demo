@@ -1,7 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Starter Template",
+  title: "John Wick",
   description: "Reactive YSWS",
 };
 
