@@ -1,5 +1,6 @@
 import Guests from "@/components/Guests"
 import Profile from "../components/Profile"
+import Footer from "@/components/Footer"
 
 
 export default function App() {
@@ -28,24 +29,27 @@ const members = [
   }
 ]
   return (
-    <div className="min-h-screen  flex flex-col items-center py-12 px-4 gap-20">
-      <div>
-        <h1 className="text-4xl font-extrabold text-white mb-8">
-          Characters of the John Wick Series
-        </h1>
+    <>
+      <div className="min-h-screen  flex flex-col items-center py-12 px-4 gap-20">
+        <div>
+          <h1 className="text-4xl font-extrabold text-white mb-8">
+            Characters of the John Wick Series
+          </h1>
 
-        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
-          {/* =========== Map function iterates over the array, just like a for loop */}
-          
-          {members.map((user, index) => (
-            <Profile key={index} user={user} />
-          ))}
+            {/* =========== Map function iterates over the array, just like a for loop */}
+            
+            {members.map((user, index) => (
+              <Profile key={index} user={user} />
+            ))}
+          </div>
+        </div>
+        <div>
+          <Guests/>
         </div>
       </div>
-      <div>
-        <Guests/>
-      </div>
-    </div>
+      <Footer/>
+    </>
   )
 }
