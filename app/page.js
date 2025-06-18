@@ -1,6 +1,7 @@
 import Guests from "@/components/Guests"
 import Profile from "../components/Profile"
 import Footer from "@/components/Footer"
+import MyButton from "@/components/MyButton"
 
 
 export default function App() {
@@ -30,7 +31,7 @@ const members = [
 ]
   return (
     <>
-      <div className="min-h-screen  flex flex-col items-center py-12 px-4 gap-20">
+      <div className="min-h-screen  flex flex-col items-center py-12 px-4 gap-20 homepage">
         <div>
           <h1 className="text-4xl font-extrabold text-white mb-8">
             Characters of the John Wick Series
@@ -46,7 +47,7 @@ const members = [
           </div>
         </div>
         <div>
-          <Guests/>
+          <MyButton url={"continental"}>Visit the continental</MyButton>
         </div>
       </div>
       <Footer/>
