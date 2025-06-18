@@ -19,3 +19,7 @@ body {
 .continental {
   background-image: url('/cont.png');
 }
+.continental-text {
+  /* font-family: Helvetica; */
+  font-weight: bolder;
+}
